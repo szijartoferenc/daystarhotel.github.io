@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daystar Hotel Website</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!--Bootsrap5 CDN LINKS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--LINK Swiper's CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.1.0/swiper-bundle.min.css" integrity="sha512-1mKT2l92H6btoIkk6fIotzeArJ3G59u/xMsDyBb/XROahx4zpXeXucqzVYssrrK0AHSNjSfe4QVE/loSr85jfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Custom Files Link-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+
+</head>
+<body data-bs-spye="scroll" data-bs-target=".navbar" data-bs-offset="100">
+
+    <!--Navbar section-->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="#" class="img-fluid">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream"></i>
+                </button>
+
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav menu-navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">Rólunk</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#rooms">Szobák</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#services">Szolgáltatások</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#team">Csapat</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#gallery">Galéria</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#price">Árak</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#blog">Bejegyzések</a>
+                                </li>
+                                <li class="nav-item mt-3 mt-lg-0">
+                                    <a class="main-btn" href="#">Foglalás</a>
+                                </li>
+                                
+                            </ul>                
+                    </div>
+                </div>
+          </nav>
+    </header>
+
+     <!--Navbar section end-->
+
+     <!--Banner section-->
+     <section id="home" class="banner_wrapper p-0">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" style="background-image: url(img/slider/slider2.webp);">
+                    <div class="slide-capiton text-center">
+                        <div>
+                            <h1>Üdvözöljük a Daystar Hotel weboldalán! </h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non architecto nobis fugit soluta adipisci blanditiis ad vero quo. Est laborum eos nostrum, dignissimos animi commodi? Nemo mollitia labore error quas.</p>
+                       </div>
+                    </div>                
+              </div>
+              <div class="swiper-slide" style="background-image: url(img/slider/slider1.webp);">
+                    <div class="slide-capiton text-center">
+                         <div>
+                             <h1>Üdvözöljük a Daystar Hotel weboldalán! </h1>
+                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non architecto nobis fugit soluta adipisci blanditiis ad vero quo. Est laborum eos nostrum, dignissimos animi commodi? Nemo mollitia labore error quas.</p>
+                         </div>
+                   </div>                
+             </div>         
+          </div>
+                <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>            
+      </div>
+        <div class="container booking-area">
+            <form class="row">
+                <div class="col-lg mb-3 mb-lg-0">
+                    <input type="date"class="form-control" placeholder="Dátum">
+                </div>
+                <div class="col-lg mb-3 mb-lg-0">
+                    <input type="date"class="form-control" placeholder="Dátum">
+                </div>
+                <div class="col-lg mb-3 mb-lg-0">
+                    <select class="form-select">
+                        <option selected>Felnőttek</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="col-lg mb-3 mb-lg-0">
+                    <select class="form-select">
+                        <option selected>Gyermekek</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="col-lg mb-3 mb-lg-0">
+                    <button type="submit" class="main-btn rounded-2 px-lg-3">Elérhető szobák</button>
+
+                </div>
+            </form>
+            
+        </div>
+
+     </section>
+
+     <!--Banner section end-->
+
+      <!--About section -->
+     <section id="about" class="about_wrapper">
+        <div class="container">
+            <div class="row flex-lg-row flex-column-reverse">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h3>Üdvözöljük<span>Hotelünkben <br class="d-done d-lg-block">a hétvége</span>menedékében!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate hic sed quam, ducimus debitis iste molestias voluptates, harum, tempore aperiam sunt ratione in cumque. Cum itaque distinctio nisi eius deleniti.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente nisi repellendus maiores alias, fugit eveniet adipisci, ipsum doloremque consectetur ab inventore recusandae esse impedit ullam eaque facere et dolore!</p>
+                    <a href="#about" class="main-btn mt-4">Felfedezés</a>
+                </div>
+                <div class="col-lg-6 mb-lg-0 ps-lg-4 text-center">
+                    <img src="./img/about-img.svg" class="img-fluid" alt="about">
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!--About section end-->
+
+     <!--Room section-->
+     <section id="rooms" class="rooms_wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 section-title text-center mb-5">
+                    <h6>Mit tehetünk Önért?</h6>
+                    <h3>Népszerű szobáink</h3>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-4 mb-4 mb-lg-0">
+                    <div class="room-items">
+                        <img src="./img/room/room1.webp" class="img-fluid">
+                        <div class="room-item-wrap">
+                            <div class="room-content">
+                                <h5 class="text-white mb-lg-5 text-decoration-underline">Klasszikus szoba</h5>
+                                <p class="text-white">A DayStar Hotel elkötelezett amellett, hogy páratlan szintű luxust, kényelmet és szolgáltatást nyújtsunk vendégeinknek.</p>
+                                <p class="text-white fw-bold mt-lg-4">12.000.-Ft/éjszaka</p>
+                                <a class="main-btn border-white text-white mt-lg-5" href="#book">Foglalás most</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-lg-0">
+                    <div class="room-items">
+                        <img src="./img/room/room2.webp" class="img-fluid">
+                        <div class="room-item-wrap">
+                            <div class="room-content">
+                                <h5 class="text-white mb-lg-5 text-decoration-underline">Executive Szoba</h5>
+                                <p class="text-white">A DayStar Hotel elkötelezett amellett, hogy páratlan szintű luxust, kényelmet és szolgáltatást nyújtsunk vendégeinknek.</p>
+                                <p class="text-white fw-bold mt-lg-4">22.000.-Ft/éjszaka</p>
+                                <a class="main-btn border-white text-white mt-lg-5" href="#book">Foglalás most</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-lg-0">
+                    <div class="room-items">
+                        <img src="./img/room/room3.webp" class="img-fluid">
+                        <div class="room-item-wrap">
+                            <div class="room-content">
+                                <h5 class="text-white mb-lg-5 text-decoration-underline">Királyi lakosztály</h5>
+                                <p class="text-white"> Ez a tágas, elegánsan berendezett lakosztály king-size ággyal, kényelmes ülősarokkal és saját erkéllyel rendelkezik, ahonnan lenyűgöző kilátás nyílik.</p>
+                                <p class="text-white fw-bold mt-lg-4">42.000.-Ft/éjszaka</p>
+                                <a class="main-btn border-white text-white mt-lg-5" href="#book">Foglalás most</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>             
+                
+            </div>
+
+        </div>
+
+     </section>
+
+     <!--Room section end-->
+
+     <!--Services section-->
+     <section id="services" class="services_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 section-title text-center mb-5">
+                    <h6>Önökért vagyunk!</h6>
+                    <h3>Kiváló szolgáltatásaink</h3>
+                </div>                
+            </div>
+            <div class="row align-items-center service-item-wrap">
+                <div class="col-lg-7 p-lg-0">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="spa" role="tabpanel">
+                            <img src="./img/services/service1.webp">
+                        </div>
+                        <div class="tab-pane fade" id="restaurant" role="tabpanel">
+                            <img src="./img/services/service2.webp">
+                        </div>
+                        <div class="tab-pane fade" id="swimming" role="tabpanel">
+                            <img src="./img/services/service3.webp">
+                        </div>
+                        <div class="tab-pane fade" id="conference" role="tabpanel">
+                            <img src="./img/services/service6.webp">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 position-relative">
+                    <div class="service-menu-area">
+                        <ul class="nav">
+                            <li>
+                                <a data-bs-toggle="tab" href="#spa" class="active">
+                                    <span class="service-icon">
+                                        <img src="./img/services/service-icon1.webp">                               
+                                    </span>
+                                    <h5>Spa,kozmetika & egészség</h5>
+                                    <p><span>Spa és kozmetika</span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tab" href="#restaurant">
+                                    <span class="service-icon">
+                                        <img src="./img/services/service-icon2.webp" alt="#">
+                                    </span>
+                                    <h5>Étterem</h5>
+                                    <p><span>Étterem</span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tab" href="#swimming">
+                                    <span class="service-icon">
+                                        <img src="./img/services/service-icon3.webp" alt="#">
+                                    </span>
+                                    <h5>Uszoda</h5>
+                                    <p><span>Uszoda</span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tab" href="#conference">
+                                    <span class="service-icon">
+                                        <img src="./img/services/service-icon4.webp" alt="#">
+                                    </span>
+                                    <h5>Konferencia terem</h5>
+                                    <p><span>Konferencia</span>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="counter mt-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h1>
+                            <span id="count1"></span>+
+                        </h1>
+                        <p>Elégedett ügyfelek</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h1>
+                            <span id="count2"></span>+
+                        </h1>
+                        <p>Új barátságok</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h1>
+                            <span id="count3"></span>+
+                        </h1>
+                        <p>5 csillagos értékelések</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h1>
+                            <span id="count4"></span>+
+                        </h1>
+                        <p>Reggeli felszolgálása</p>
+                    </div>        
+                </div>
+            </div>
+        </div>
+     </section>
+     <!--Services section end-->
+
+     <!--Team section-->
+     <section id="team" class="team_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 section-title text-center mb-5  ">
+                    <h5>Mit tehetünk Önért?</h5>
+                    <h3>Személyzetünk</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0 rounded-3">
+                        <img src="img/team/team1.webp" class="img-fluid rounded-3">
+                        <div class="team-info">
+                            <h5>John Doe</h5>
+                            <p>Igazgató</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0 rounded-3">
+                        <img src="img/team/team2.webp" class="img-fluid rounded-3">
+                        <div class="team-info">
+                            <h5>Martin Doe</h5>
+                            <p>Recepció vezető</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0 rounded-3">
+                        <img src="img/team/team3.webp" class="img-fluid rounded-3">
+                        <div class="team-info">
+                            <h5>Edward Doe</h5>
+                            <p>Mesterszakács</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0 rounded-3">
+                        <img src="img/team/team4.webp" class="img-fluid rounded-3">
+                        <div class="team-info">
+                            <h5>Anna Doe</h5>
+                            <p>Takarítás/Karbantartás</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     </section>
+      <!--Team section end-->
+
+      <!--Gallery section-->
+      <section id="gallery" class="gallery_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 section-title text-center mb-5">
+                    <h6>Szállodánk legjobb képei</h6>
+                    <h3>Galéria</h3>
+                </div>               
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img src="./img/gallery/1.webp" class="img-fluid w-100">
+                    <div class="gallery-item-content"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img src="./img/gallery/2.webp" class="img-fluid w-100">
+                    <div class="gallery-item-content"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img src="./img/gallery/3.webp" class="img-fluid w-100">
+                    <div class="gallery-item-content"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img src="./img/gallery/4.webp"class="img-fluid w-100">
+                    <div class="gallery-item-content"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img src="./img/gallery/5.webp" class="img-fluid w-100">
+                    <div class="gallery-item-content"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img src="./img/gallery/6.webp" class="img-fluid w-100">
+                    <div class="gallery-item-content"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+      </section>
+      <!--Gallery section end-->
+
+      <!--Price section-->
+      <section id="price" class="price_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 section-title text-center mb-5">
+                    <h6>A legjobb és megfizethető ár az Ön számára</h6>
+                    <h3>Áraink</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-4 text-center rounded-3">
+                        <h5 class="text-decoration-underline mb-4">Aktív Kikapcsolódás Csomag</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>Kalandos tevékenységek</p>
+                            </li>
+                            <li>
+                                <p>Túrák, kerékpárkölcsönzés</p>
+                            </li>
+                            <li>
+                                <p>Fitness központ hozzáférés</p>
+                            </li>
+                            <li>
+                                <p>Fgészséges étkezési lehetőségek</p>
+                            </li>
+                        </ul>
+                        <hr/>
+                        <h3>35000-Ft <sub class="fs-6 fw-normal">/éjszaka</sub></h3>
+                        <a href="#book" class="main-btn">Regisztráció</a>
+                    </div>                  
+
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-4 text-center rounded-3">
+                        <h5 class="text-decoration-underline mb-4">Luxus Pihenés Csomag</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>Kényelmes kétágyas szoba kilátással</p>
+                            </li>
+                            <li>
+                                <p>Koncertjegy (-30%)</p>
+                            </li>
+                            <li>
+                                <p>Teljes reggeli svédasztalos étkezéssel</p>
+                            </li>
+                            <li>
+                                <p>Spa használat, wellness tevékenységek</p>
+                            </li>
+                        </ul>
+                        <hr/>
+                        <h3>45000-Ft <sub class="fs-6 fw-normal">/éjszaka</sub></h3>
+                        <a href="#book" class="main-btn">Regisztráció</a>
+                    </div>                  
+
+                </div>
+              
+                 <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-4 text-center rounded-3">
+                        <h5 class="text-decoration-underline mb-4"> Üzleti Konferencia Csomag</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>Kényelmes szobák üzleti célokra</p>
+                            </li>
+                            <li>
+                                <p>Konferenciaterem hozzáférés</p>
+                            </li>
+                            <li>
+                                <p>Üzleti reggeli</p>
+                            </li>
+                            <li>
+                                <p>Wifi, projektorkölcsönzés</p>
+                            </li>
+                        </ul>
+                        <hr/>
+                        <h3>55000-Ft <sub class="fs-6 fw-normal">/éjszaka</sub></h3>
+                        <a href="#book" class="main-btn">Regisztráció</a>
+                    </div>                  
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-4 text-center rounded-3">
+                        <h5 class="text-decoration-underline mb-4">Romantikus Esküvői Csomag</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>Esküvői szoba, pezsgővel és gyümölcskosárral</p>
+                            </li>
+                            <li>
+                                <p>Privát vacsora</p>
+                            </li>
+                            <li>
+                                <p> Masszázs pároknak</p>
+                            </li>
+                            <li>
+                                <p>Virágcsokor és esküvői torta</p>
+                            </li>
+                        </ul>
+                        <hr/>
+                        <h3>75000-Ft <sub class="fs-6 fw-normal">/éjszaka</sub></h3>
+                        <a href="#book" class="main-btn">Regisztráció</a>
+                    </div>                  
+
+                </div>
+
+            </div>
+            
+
+        </div>
+
+      </section>
+
+      <!--Price section-->
+
+      <!--Blog section-->
+      <section id="blog" class="blog_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 section-title text-center mb-5">
+                    <h6>Üdvözöljük Látogatóinkat!</h6>
+                    <h3>Bejegyzéseink</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card p-0 border-0 rounded-0">
+                        <img src="img/blog/blog1.webp" alt="#">
+                        <div class="blog-content bg-white p-4">
+                            <h5 class="text-decoration-underline mb-4">Kellemes utazás</h5>
+                            <h6>Admin 2023.08.14</h6>
+                            <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, eos doloremque dolores nobis accusantium dolor earum eveniet inventore quis quia magnam natus id eligendi minus architecto possimus debitis. Reprehenderit, ea.</p>
+                            <a href="#"class="main-btn mt-2">Olvasson tovább</a>
+                        </div>
+                   </div>                
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card p-0 border-0 rounded-0">
+                        <img src="img/blog/blog2.webp" alt="#">
+                        <div class="blog-content bg-white p-4">
+                            <h5 class="text-decoration-underline mb-4">Pihenés zóna</h5>
+                            <h6>Admin 2023.08.14</h6>
+                            <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, eos doloremque dolores nobis accusantium dolor earum eveniet inventore quis quia magnam natus id eligendi minus architecto possimus debitis. Reprehenderit, ea.</p>
+                            <a href="#"class="main-btn mt-2">Olvasson tovább</a>
+                        </div>
+                    </div>                   
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="our-partner-slider mt-5">
+            <div class="container swiper our-partner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/partners/brand1.webp"></div>
+                    <div class="swiper-slide"><img src="./img/partners/brand2.webp"></div>
+                    <div class="swiper-slide"><img src="./img/partners/brand3.webp"></div>
+                    <div class="swiper-slide"><img src="./img/partners/brand4.webp"></div>
+                    <div class="swiper-slide"><img src="./img/partners/brand5.webp"></div>
+                    <div class="swiper-slide"><img src="./img/partners/brand6.webp"></div>
+                    <div class="swiper-slide"><img src="./img/partners/brand1.webp"></div>
+                    <div class="swiper-slide"><img src="./img/partners/brand2.webp"></div>
+                    <div class="swiper-slide"><img src="./img/partners/brand3.webp"></div>
+                    <div class="swiper-slide"><img src="./img/partners/brand4.webp"></div>
+                    <div class="swiper-slide"><img src="./img/partners/brand5.webp"></div>
+                    <div class="swiper-slide"><img src="./img/partners/brand6.webp"></div>
+                </div>
+
+            </div>
+
+        </div>
+      </section>
+      <!--Blog section end-->
+
+       <!--Footer section-->
+       <section id="contact" class="footer_wrapper mt-3 mt-md-0 pb-0">
+            <div class="container pb-3">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Hotel helyszíne</h5>
+                        <p class="ps-0">Odit alias ad dicta voluptates magni asperiores iste officiis porro libero animi nemo, nisi perferendis quae consequatur quibusdam debitis non consectetur unde.</p>
+                        <div class="content-info">
+                            <ul class="list-unstyled">
+                                <li><a href="#"><i class="fa fa-home me-3"></i>MC33 Galvina 5 Nevercity </a></li>
+                                <li><a href="#"><i class="fa fa-phone me-3"></i>+1 332 443 343 </a></li>
+                                <li><a href="#"><i class="fa fa-envelope me-3"></i>info@example.com </a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Több link</h5>
+                        <ul class="linked-widget p-0">
+                            <li><a href="#about">Rólunk</a></li>
+                            <li><a href="#">Irodánk</a></li>
+                            <li><a href="#">Szállítás</a></li>
+                            <li><a href="#">Boltunk</a></li>
+                            <li><a href="#">Garancia vállalás</a></li>
+                            <li><a href="#">Ajándékkártya </a></li>
+                            <li><a href="#">Felhasználási feltételek </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Több link</h5>
+                        <ul class="linked-widget p-0">
+                            <li><a href="#about">Rólunk</a></li>
+                            <li><a href="#">Irodánk</a></li>
+                            <li><a href="#">Szállítás</a></li>
+                            <li><a href="#">Boltunk</a></li>
+                            <li><a href="#">Garancia vállalás</a></li>
+                            <li><a href="#">Ajándékkártya </a></li>
+                            <li><a href="#">Felhasználási feltételek </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Hírlevél</h5>
+                        <div class="form-group mb-4">
+                            <input type="email" class="form-control bg-transparent" placeholder="Írja be a email címet">
+                            <button type="submit" class="main-btn rounded-2 mt-3 border-white text-white">Feliratkozás   </button>
+                        </div>
+                        <h5>Kapcsolat</h5>
+                        <ul class="social-network d-flex align-items-center p-0">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-fluid copyright-section">
+                <p>Copyright <a href="#">SzF</a>All Rights Reseved</p>
+
+            </div>
+       </section>
+
+       <!--Footer section end-->
+
+
+
+
+
+    <!--Bootsrap5 CDN JS LINKS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.1/js/bootstrap.min.js" integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!--Swiper JS LINK-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.1.0/swiper-bundle.min.js" integrity="sha512-4Ooh3fl4STrmn95ZbS/J6l8csp/FvSKPaeDAH/IaPQGJIx9lmpuxXZTCYKR2W5+Bt7i74exPvAT2PsWnac+sow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--CUSTOM JS LINK-->
+    <script src="js/script.js"></script>
+</body>
+</html>
